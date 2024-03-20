@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --black-color: #1a1a1a;
+  --white-color: #ffffff;
+  --light-silver-color: #d9d9d9;
+  --bg-register-color: #e6e6e6;
+  --sgo-btn: #737373;
+}
+
+* {
+  font-family: Cabin, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 1 auto;
+  background-color: var(--bg-register-color);
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+/* Header section */
+
+.header {
+  background-color: var(--black-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--light-silver-color);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.brand:hover {
+  color: var(--white-color);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.sgo-btn {
+  display: block;
+  padding: 14px 28px;
+  background-color: var(--light-silver-color);
+  color: var(--black-color);
+}
+
+.sgo-btn:hover {
+  background-color: var(--sgo-btn);
+  color: var(--white-color);
+}
+
+.user-avatar {
+  text-decoration: none;
+  color: var(--light-silver-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar::before {
+  content: "";
+  background-image: url(../img/avatar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.user-avatar:hover {
+  color: var(--white-color);
+}
+
+/* Form section */
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 100px;
+  width: 300px;
+}
+
+.form {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-img {
+  width: 250px;
+  height: 250px;
+}
+
+.username-label {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  color: var(--black-color);
+}
+
+.username-input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--light-silver-color);
+  outline: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--black-color);
+}
+
+.sgi-btn {
+  padding: 15px 60px;
+  background-color: var(--sgo-btn);
+  color: var(--white-color);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.sgi-btn:hover {
+  background-color: var(--light-silver-color);
+  color: black;
+  border: 1px solid var(--black-color);
+}
+
+#name:invalid + #btn {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.footer {
+  background-color: var(--black-color);
+  text-align: center;
+}
+
+.footer .container {
+  margin: 10px auto;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--light-silver-color);
+}
+
+.footer a:hover {
+  color: var(--white-color);
+}
