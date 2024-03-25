@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-course_Task</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="signin-page">
+      <header class="header">
+        <div class="header-container container">
+          <a class="brand" href="./list-books/list-of-books.html"
+            >X-course_Task/Yevhenii Pavlenko</a
+          >
+          <!-- <nav class="nav">
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="#">
+                  <img src="./svg/cart.svg" width="38" height="38" alt="cart" />
+                </a>
+              </li>
+              <li>
+                <button class="btn sgo-btn" type="button">Sing-Out</button>
+              </li>
+              <li><a class="user-avatar" href="#"> Username </a></li>
+            </ul>
+          </nav> -->
+        </div>
+      </header>
+      <main class="wrapper">
+        <section class="sign-in">
+          <div class="form-box container">
+            <img class="form-img" src="./img/avatar.png" alt="" />
+            <form class="form" action="/" method="post">
+              <label class="username-label" for="name">Username:</label>
+              <input
+                class="username-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                pattern=".{4,}"
+                required
+              />
+              <button class="btn sgi-btn" type="submit" id="btn">
+                Sign-in
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <a href="https://prometheus.org.ua/">Made with Prometheus © 2024</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
