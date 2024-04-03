@@ -15,11 +15,11 @@
 
 body {
   background: linear-gradient(
-    rgb(18, 15, 15),
-    rgba(51, 51, 46, 0.59),
-    rgb(107 106 109 / 64%),
-    rgba(51, 51, 46, 0.59),
-    rgb(18, 15, 15)
+    rgba(18 15 15 /80%),
+    rgba(51, 51, 46, 60%),
+    rgba(107 106 109 / 50%),
+    rgba(51, 51, 46, 60%),
+    rgba(18 15 15 / 80%)
   );
 }
 
@@ -38,7 +38,7 @@ body {
 
 .header {
   /* background-color: var(--black-color); */
-  padding: 15px;
+  padding: 20px;
 }
 
 .header-container {
@@ -46,7 +46,7 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-  height: 50px;
+  max-height: 60px;
 }
 
 .brand {
@@ -55,6 +55,7 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.4;
+  padding: 5px 0;
 }
 
 .brand:hover {
@@ -69,6 +70,11 @@ body {
   padding: 0;
   list-style-type: none;
   margin: 0;
+}
+
+.nav-link img:hover {
+  transition: 0.3s all;
+  transform: scale(1.4);
 }
 
 .btn {
@@ -110,7 +116,7 @@ body {
   width: 40px;
   height: 40px;
   display: inline-block;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .user-avatar:hover {

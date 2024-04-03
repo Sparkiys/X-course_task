@@ -281,7 +281,15 @@ textarea {
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
+  -webkit-appearance: none;
+}
+
+[type="number"],
+[type="number"]:hover,
+[type="number"]:focus {
+  outline: 0;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 /**
