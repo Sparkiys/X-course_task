@@ -3,10 +3,11 @@
 }
 
 .cart__box {
-  padding-top: 30px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 920px;
 }
 
 .cart__nav {
