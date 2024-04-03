@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>X-course_Task</title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="./list-book-style.css" />
@@ -38,153 +39,159 @@
         </div>
       </header>
       <main class="wrapper">
-        <section class="container">
-          <div class="book-search">
-            <div class="search-box">
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="Enter book name"
-              />
-              <button type="submit">
-                <img
-                  src="https://prometheus-platform.github.io/Example_of_course_project_2/static/media/searchIcon.faea7e5f368e59b38ec7fcf14c37394f.svg"
-                  alt="search"
+        <section>
+          <div class="container">
+            <div class="book-search">
+              <div class="search-box">
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Enter book name"
                 />
-              </button>
+                <button type="submit">
+                  <img
+                    src="https://prometheus-platform.github.io/Example_of_course_project_2/static/media/searchIcon.faea7e5f368e59b38ec7fcf14c37394f.svg"
+                    alt="search"
+                  />
+                </button>
+              </div>
+              <div class="book-select">
+                <select name="price" id="price">
+                  <option value="{min:0}">Any Price</option>
+                  <option value="{min:0, max:15 }">up to $15</option>
+                  <option value="{min:15, max:30 }">$15-$30</option>
+                  <option value="{min:30 }">$30+</option>
+                </select>
+              </div>
             </div>
-            <div class="book-select">
-              <select name="price" id="price">
-                <option value="{min:0}">Any Price</option>
-                <option value="{min:0, max:15 }">up to $15</option>
-                <option value="{min:15, max:30 }">$15-$30</option>
-                <option value="{min:30 }">$30+</option>
-              </select>
-            </div>
+            <ul class="books-list">
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a
+                      class="view-btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a class="view-btn" href="">View</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a class="view-btn" href="">View</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a class="view-btn" href="">View</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a class="view-btn" href="">View</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a class="view-btn" href="">View</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a class="view-btn" href="">View</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="book-card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book-title">Book name</p>
+                  <p class="book-author">Book author</p>
+                  <div class="book-info">
+                    <p class="book-price">Price</p>
+                    <a class="view-btn" href="">View</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="books-list">
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="book-card">
-                <img
-                  src="../img/angular_up_and_running.jpg"
-                  width="150"
-                  alt="book-img"
-                />
-                <p class="book-title">Book name</p>
-                <p class="book-author">Book author</p>
-                <div class="book-info">
-                  <p class="book-price">Price</p>
-                  <a class="view-btn" href="">View</a>
-                </div>
-              </div>
-            </li>
-          </ul>
         </section>
       </main>
       <footer class="footer">

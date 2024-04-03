@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-course_Task</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./list-book-style.css" />
+    <link rel="stylesheet" href="./specific-book.css" />
+  </head>
+  <body>
+    <div class="signin-page">
+      <header class="header">
+        <div class="header-container container">
+          <a class="brand" href="../list-books/list-of-books.html"
+            >X-course_Task/Yevhenii Pavlenko</a
+          >
+          <nav class="nav">
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="#">
+                  <img
+                    src="../svg/cart.svg"
+                    width="38"
+                    height="38"
+                    alt="cart"
+                  />
+                </a>
+              </li>
+              <li>
+                <button class="btn sgo-btn" type="button">Sing-Out</button>
+              </li>
+              <li>
+                <a class="user-avatar" href="../index.html"> Username </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="wrapper">
+        <section>
+          <div class="container">
+            <div class="book__container">
+              <div class="book">
+                <div class="book__image">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    alt="angular-book"
+                  />
+                </div>
+                <div class="book__desc">
+                  <h1 class="book__title">Angular: Up and Running</h1>
+                  <ul class="book__list">
+                    <li>Author(s): Shyam Seshadri</li>
+                    <li>Book level: Beginner</li>
+                    <li>Book tags: core, frontend, javascript, angular</li>
+                  </ul>
+                </div>
+
+                <p class="book_info">
+                  This book will demystify Angular as a framework, as well as
+                  provide clear instructions and examples on how to get started
+                  with writing scalable Angular applications. Angular: Up &
+                  Running covers most of the major pieces of Angular, but in a
+                  structured manner that is generally used in hands-on training.
+                  Each chapter takes one concept, and use examples to cover how
+                  it works. Problems to work on (with solutions) at the end of
+                  each chapter reinforce the learnings of each chapter and allow
+                  readers to really get hands-on with Angular.
+                </p>
+              </div>
+              <div class="book-cart">
+                <ul class="book-cart__list">
+                  <li class="book-cart__item">
+                    Price, $
+                    <span>29.99</span>
+                  </li>
+                  <li class="book-cart__item">
+                    Count
+                    <span>
+                      <button type="button" class="btn-count plus">
+                        <img src="../svg/minus.svg" alt="minus" />
+                      </button>
+                      <input
+                        type="number"
+                        name="count"
+                        id="count"
+                        min="1"
+                        max="42"
+                        value="1"
+                      />
+                      <button type="button" class="btn-count minus">
+                        <img src="../svg/plus.svg" alt="plus" />
+                      </button>
+                    </span>
+                  </li>
+                  <li class="book-cart__item">
+                    Total price, $
+                    <span>29.99</span>
+                  </li>
+                  <div class="btn-box">
+                    <button type="button" class="btn btn-add">
+                      Add to cart
+                    </button>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <a href="https://prometheus.org.ua/">Made with Prometheus © 2024</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
