@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./list-book-style.css" />
   </head>
   <body>
-    <div class="signin-page">
+    <div class="wrapper">
       <header class="header">
         <div class="header-container container">
           <a class="brand" href="list-of-books.html"
@@ -19,7 +19,7 @@
           <nav class="nav">
             <ul class="nav-list">
               <li>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="../cart/empty-cart.html">
                   <img
                     src="../svg/cart.svg"
                     width="38"
@@ -38,11 +38,11 @@
           </nav>
         </div>
       </header>
-      <main class="wrapper">
+      <main class="main">
         <section>
           <div class="container">
-            <div class="book-search">
-              <div class="search-box">
+            <div class="book">
+              <div class="book__search">
                 <input
                   type="search"
                   name="search"
@@ -56,7 +56,7 @@
                   />
                 </button>
               </div>
-              <div class="book-select">
+              <div class="book__select">
                 <select name="price" id="price">
                   <option value="{min:0}">Any Price</option>
                   <option value="{min:0, max:15 }">up to $15</option>
@@ -65,128 +65,194 @@
                 </select>
               </div>
             </div>
-            <ul class="books-list">
-              <li>
-                <div class="book-card">
+            <ul class="books__list">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
                     <a
-                      class="view-btn"
+                      class="view__btn"
                       href="../specific-book/specific-book.html"
                       >View</a
                     >
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="book-card">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
-                    <a class="view-btn" href="">View</a>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="book-card">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
-                    <a class="view-btn" href="">View</a>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="book-card">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
-                    <a class="view-btn" href="">View</a>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="book-card">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
-                    <a class="view-btn" href="">View</a>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="book-card">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
-                    <a class="view-btn" href="">View</a>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="book-card">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
-                    <a class="view-btn" href="">View</a>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="book-card">
+              <li class="book__item">
+                <div class="book__card">
                   <img
                     src="../img/angular_up_and_running.jpg"
                     width="150"
                     alt="book-img"
                   />
-                  <p class="book-title">Book name</p>
-                  <p class="book-author">Book author</p>
-                  <div class="book-info">
-                    <p class="book-price">Price</p>
-                    <a class="view-btn" href="">View</a>
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="book__item">
+                <div class="book__card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="book__item">
+                <div class="book__card">
+                  <img
+                    src="../img/angular_up_and_running.jpg"
+                    width="150"
+                    alt="book-img"
+                  />
+                  <p class="book__title">Book name</p>
+                  <p class="book__author">Book author</p>
+                  <div class="book__info">
+                    <p class="book__price">Price</p>
+                    <a
+                      class="view__btn"
+                      href="../specific-book/specific-book.html"
+                      >View</a
+                    >
                   </div>
                 </div>
               </li>

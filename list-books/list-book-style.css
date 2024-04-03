@@ -1,4 +1,4 @@
-.book-search {
+.book {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +6,7 @@
   margin-top: 50px;
 }
 
-.search-box {
+.book__search {
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -34,11 +34,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-.search-box input:focus {
-  outline: 0;
+.book__search input[type="search"]:focus {
+  outline: none;
 }
 
-.search-box button {
+.book__search button {
   background: none;
   border: none;
   width: 24px;
@@ -46,18 +46,18 @@ input[type="search"]::-webkit-search-results-decoration {
   cursor: pointer;
 }
 
-.book-select select {
+.book__select select {
   padding: 10px 20px;
   border-radius: 10px;
   max-height: 40px;
   font-size: 16px;
 }
 
-.book-select select > option {
+.book__select select > option {
   font-size: 16px;
 }
 
-.books-list {
+.books__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -68,7 +68,7 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: 910px;
 }
 
-.books-list li {
+.books__list li {
   box-sizing: border-box;
   width: 220px;
   height: 350px;
@@ -79,33 +79,38 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: var(--light-silver-color);
 }
 
-.book-card img {
+.books__list li:hover {
+  transition: 1s all;
+  transform: scale(1.2);
+}
+
+.book__card img {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
 }
 
-.book-title {
+.book__title {
   font-size: 20px;
   margin: 10px 0;
 }
 
-.book-author {
+.book__author {
   margin: 0;
 }
 
-.book-info {
+.book__info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.book-info p {
+.book__info p {
   margin: 10px 0;
 }
 
-.book-info a {
+.book__info a {
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 10px;
@@ -113,7 +118,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: var(--white-color);
 }
 
-.book-info a:hover {
+.book__info a:hover {
   background-color: var(--white-color);
   color: var(--black-color);
   border: 1px solid var(--black-color);
